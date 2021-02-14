@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>Microblog</title>
+</head>
+<body>
+    <header>
+        <div class="title" >Logo Microblog</div>
+        <div class="menu" >
+            <div class="menu-item" >Recent</div>
+            <div class="menu-item" >Calender</div>
+        </div>
+    </header>
+
+    <div class="container" >
+        <form method="POST" >
+            <textarea name="content" ></textarea>
+            <input type="submit" />
+        </form>
+
+        <div class="entries" >
+            {% for entry in entries %}
+            <div class="entry">
+                <div class="entry-title" >
+                    {{ entry[0] | truncate(30, true) }} 
+                    <span class="entry-date" >- {{ entry[1] }} </span>
+                </div>
+                <p class="entry-content" >{{ entry[0] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container" >
+            <div class="left">
+                <a class="footer-item" >Made by Rudi Dian Arifin</a>
+                <a class="footer-item" >Cek yang lain juga ya</a>
+            </div>
+            <div class="right">
+                <div class="footer-section">
+                    <div class="footer-item" >Recent</div>
+                    <div class="footer-item" >Calender</div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-item" >About</div>
+                    <div class="footer-item" >How this was made</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

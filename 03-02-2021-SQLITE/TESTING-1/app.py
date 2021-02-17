@@ -31,7 +31,7 @@ def redirect(nama):
     # conn = sqlite3.connect('register.db')
     # c = conn.cursor()
     # cari = c.execute("SELECT email FROM register WHERE username = (?)", (nama,))
-
+    
     redirect_url = 'http://localhost:5000'
     with sqlite3.connect('register.db') as conn:
         cursor = conn.cursor()

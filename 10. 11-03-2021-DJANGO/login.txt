@@ -1,0 +1,23 @@
+username : admin
+email : ngawidian@gmail.com
+password : admin
+
+
+--------------------------
+
+test
+4321abcd
+
+-------------------------
+
+yunita
+akukamudia
+
+------------------------ 
+
+yunitaku
+akukamudiaa
+
+-------------------------
+wahyubintara
+ashkaskask

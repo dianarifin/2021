@@ -1,0 +1,61 @@
+Membuat project baru di django
+
+# django-admin startproject django_project
+
+--------------------------------------------------------------
+
+Jalankan server
+
+# manage.py runserver
+
+--------------------------------------------------------------
+
+Membuat project/ app baru di dalam project
+
+# manage.py startapp blog
+
+--------------------------------------------------------------
+
+Membuat admin super user
+
+# manage.py createsuperuser 
+
+Pastikan sudah membuat table auth_user
+
+	# manage.py migrate
+
+--------------------------------------------------------------
+
+memastikan tidak ada database yang berubah dan pastikan membuat migrasi setelah membuat models
+
+# manage.py makemigrations
+
+--------------------------------------------------------------
+
+Membuat migrasi database
+
+# manage.py migrate
+
+--------------------------------------------------------------
+
+eksekusi database 
+
+# manage.py sqlmigrate blog 0001
+
+
+--------------------------------------------------------------
+
+Membuka shell python
+
+# manage.py shell
+
+--------------------------------------------------------------
+
+Install Cripsy Form
+
+# pip install-crispy-forms
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+

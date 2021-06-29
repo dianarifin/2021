@@ -1,0 +1,24 @@
+<html lang="en">
+<head></head>
+    <title>Selamat Datang</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename="css/style.css") }}" >
+
+</head>
+<body>
+    <nav>
+        <label class="logo" for="">Flask</label>
+        <ul>
+            <li><a href="{{ url_for("home")}}">Home</a></li>
+            <li><a href="{{ url_for("about")}}">About</a></li>
+            <li><a href="{{ url_for("data_m")}}">Data Mahasiswa</a></li>
+        </ul>
+    </nav>
+
+    <div class="konten">
+        {% block konten %}
+            
+        {% endblock %}
+    </div>
+
+</body>
+</html>

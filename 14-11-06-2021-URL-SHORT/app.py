@@ -54,6 +54,7 @@ def index():
 
 @app.route('/display/<url>')
 def display_short_url(url):
+    
     return render_template('shorturl.html', short_url_display=url)
 
 @app.route('/<short_url>')

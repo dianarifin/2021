@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    min-height: 2000px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* header and main style  */
+
+    .header-main {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 750px;
+        box-sizing: border-box;
+    }
+
+    .background-top {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        height: 120%;
+        background-image: url("/Antarmuka/style/img/background-header-2.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        box-sizing: border-box;
+    }
+
+    .header-top {
+        width: 100%;
+        height: 90px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: red; */
+    }
+
+    .header-top .logo img {
+        width: 200px;
+    }
+
+    .container-big {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+    .main-container {
+        width: 100%;
+        height: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+        box-sizing: border-box;
+    }
+
+    .header-top .logo {
+        float: left;
+    }
+
+    .header-top .menu-left {
+        width: auto;
+        height: auto;
+        padding-top: 12px;
+        align-items: center;
+        float: right;
+        box-sizing: border-box;
+    }
+
+    .menu-left nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding-left: 35px;
+        box-sizing: border-box;
+    }
+
+
+/* header and main style  */
+
+
+/* body style  */
+
+    .main-body {
+        display: flex;
+        margin-top: 75px;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .big-title {
+        display: block;
+        width: 70%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .big-title h2 {
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+        line-height: 1.2;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .main-info {
+        margin-top: 40px;
+        width: 40%;
+        color: #D3D3D3;
+        font-size: 16px;
+        font-weight: regular;
+        line-height: 1.6;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .main-body a.register-button {
+        margin-top: 60px;
+        display: block;
+        width: 170px;
+        height: 45px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: regular;
+        color: white;
+        padding: 16px 10px 10px 14px;
+        background-color: #162BE9;
+        box-shadow: 3px 3px 2px rgb(33, 33, 33, 0.2);
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .main-body a.register-button:hover {
+        background-color: #0b178a;
+    }
+
+    .main-explained {
+        width: 100%;
+        height: 100%;
+        display: block;
+       
+    }
+
+
+/* body style  */
+
+
+/* footer main  */
+
+
+
+
+/* footer main  */
+
+
+
+@media screen and (min-width: 1450px) {
+    /* hi-res laptops and desktops, big landscape tablets, laptops, and desktops*/ 
+
+    .header-main {
+        min-height: 900px;
+    }
+
+    .background-top {
+        height: 100%;
+        background-image: url("/Antarmuka/style/img/background-header-1.png");
+        background-position-y: -170px;
+    }
+
+
+    .main-body {
+        margin-top: 150px;
+    }
+
+    .main-info {
+        font-size: 18px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1280px) {
+    /* hi-res laptops and desktops, big landscape tablets, laptops, and desktops*/ 
+
+}
+
+@media screen and (max-width: 1025px) {
+
+}
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .header-main {
+        min-height: 780px;
+    }
+
+    .background-top {
+        height: 100%;
+        background-image: url("/Antarmuka/style/img/background-header-1.png");
+    }
+
+    .header-top .menu-left {
+        display: none;
+    }
+
+    .main-body {
+        margin-top: 30px;
+    }
+
+    .big-title {
+        width: 100%;
+    }
+
+    .big-title h2 {
+        font-size: 40px;
+    }
+
+    .main-info {
+        width: 100%;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    .main-body a.register-button {
+        margin-top: 35px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .big-title h2 {
+        font-size: 35px;
+    }
+
+    .main-info {
+        font-size: 16px;
+    }
+
+
+}
